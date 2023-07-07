@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="167dp"
+    android:layout_height="122dp"
+    android:id="@+id/card"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp"
+    app:cardBackgroundColor="#FFAABB"
+    app:strokeWidth="@null">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/colorCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/inriasans_regular"
+            android:textColor="#fff"
+            android:text="#ffaabb"/>
+        <View
+            android:layout_width="90.11dp"
+            android:layout_height="0.5dp"
+            android:background="#fff"
+            android:layout_below="@id/colorCode"
+            />
+        <TextView
+            android:layout_above="@+id/date"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/createdAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/inriasans_regular"
+            android:textColor="#fff"
+            android:text="Created At"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/inriasans_regular"
+            android:textColor="#fff"
+            android:text="09/05/2023"/>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
